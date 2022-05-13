@@ -7,24 +7,43 @@ body {
 a {
   text-decoration: none;
   font-size: 30px;
-  border: 2px solid black;
+  color: #000;
+  border: 2px solid #000;
   padding: 40px 80px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
   position: relative;
-  overflow: hidden;
-  font-family: sans-serif; }
+  transition: color 1s ease-out; }
 
 a::before {
   content: '';
+  transition: transform 1s;
   position: absolute;
-  background-color: yellow;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
-  transform: rotate(-90deg);
-  transform-origin: bottom left;
-  transition: transform 1s ease-in-out; }
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transform: rotateX(90deg);
+  z-index: -1; }
+
+a::after {
+  content: '';
+  transition: transform 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transform: rotateY(90deg);
+  z-index: -1; }
 
 a:hover::before {
-  transform: rotate(0deg); }
+  transform: rotateX(0deg); }
+
+a:hover::after {
+  transform: rotateY(0deg); }
+
+a:hover {
+  color: #fff; }
