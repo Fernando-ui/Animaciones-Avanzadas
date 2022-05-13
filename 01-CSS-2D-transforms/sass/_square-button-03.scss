@@ -2,8 +2,8 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
-
+  justify-content: center;
+}
 a {
   text-decoration: none;
   font-size: 30px;
@@ -13,11 +13,11 @@ a {
   font-family: sans-serif;
   letter-spacing: 2px;
   position: relative;
-  transition: color 1s ease-in; }
-
+  transition: color 1s ease-in;
+}
 a:hover {
-  color: #fff; }
-
+  color: #fff;
+}
 a::before {
   content: "";
   width: 100%;
@@ -28,11 +28,11 @@ a::before {
   left: 0;
   z-index: -1;
   transition: transform 1s ease-in;
-  transform: rotateX(90deg); }
-
+  transform: rotateX(90deg);
+}
 a:hover::before {
-  transform: rotateX(0deg); }
-
+  transform: rotateX(0deg);
+}
 a::after {
   content: "";
   position: absolute;
@@ -43,7 +43,8 @@ a::after {
   left: 0;
   z-index: -1;
   transform: rotateY(90deg);
-  transition: transform 1s ease-in; }
-
+  transition: transform 1s ease-in;
+}
 a:hover::after {
-  transform: rotateY(0deg); }
+  transform: rotateY(0deg);
+}
