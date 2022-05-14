@@ -2,8 +2,8 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
-
+  justify-content: center;
+}
 a {
   text-decoration: none;
   font-size: 30px;
@@ -12,8 +12,8 @@ a {
   padding: 40px 80px;
   background-color: #000;
   position: relative;
-  overflow: hidden; }
-
+  overflow: hidden;
+}
 a::before {
   content: "Hover 7";
   position: absolute;
@@ -27,7 +27,8 @@ a::before {
   justify-content: center;
   transform: translate(-101%, 100%);
   color: #000;
-  transition: transform 0.5s ease; }
+  transition: transform 0.5s ease;
+}
 
 a::after {
   content: "Hover 7";
@@ -41,10 +42,11 @@ a::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.5s ease; }
-
+  transition: transform 0.5s ease;
+}
 a:hover::after {
-  transform: translate(100%, -100%); }
-
+  transform: translate(100%, -100%);
+}
 a:hover::before {
-  transform: translate(0, 0); }
+  transform: translate(0, 0);
+}
