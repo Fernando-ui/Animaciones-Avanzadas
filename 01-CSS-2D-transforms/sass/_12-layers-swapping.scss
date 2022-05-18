@@ -3,19 +3,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #21232b; }
-
+  background-color: #21232b;
+}
 a {
   text-decoration: none;
-  border: 2px solid yellow;
+  border: 2px solid rgb(255, 255, 0);
   padding: 40px 80px;
   font-size: 34px;
   position: relative;
   color: transparent;
   background-color: #000;
   font-family: sans-serif;
-  letter-spacing: 4px; }
-
+  letter-spacing: 4px;
+}
 a::before {
   content: "Hover me";
   position: absolute;
@@ -28,12 +28,14 @@ a::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: left 0.5s, transform 0.5s, opacity 0.5s ease; }
+  transition: left 0.5s, transform 0.5s, opacity 0.5s ease;
+}
 
 a:hover::before {
   left: 103%;
   transform: scale(0) rotate(360deg);
-  opacity: 0; }
+  opacity: 0;
+}
 
 a::after {
   content: "Hover me";
@@ -48,10 +50,11 @@ a::after {
   align-items: center;
   justify-content: center;
   transition: left 0.5s, transform 0.5s, opacity 0.5s ease;
-  transform: scale(0) rotateY(0deg);
-  opacity: 0; }
-
-a:hover::after {
-  left: 0;
-  transform: scale(1) rotateY(360deg);
-  opacity: 1; }
+  transform:scale(0) rotateY(0deg);
+  opacity:0;
+}
+a:hover::after{
+    left:0;
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+}
