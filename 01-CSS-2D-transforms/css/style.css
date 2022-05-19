@@ -3,55 +3,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #21232b; }
+  font-family: sans-serif;
+  background-color: #272727; }
 
 a {
+  width: 220px;
+  height: 80px;
+  color: #ff0;
+  background-color: transparent;
+  font-size: 26px;
   text-decoration: none;
-  border: 2px solid yellow;
-  padding: 40px 80px;
-  font-size: 34px;
-  position: relative;
-  color: transparent;
-  background-color: #000;
-  font-family: sans-serif;
-  letter-spacing: 4px; }
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 80px;
+  transition: all .5s ease;
+  position: reltive; }
 
-a::before {
-  content: "Hover me";
+a::before, a::after {
+  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: yellow;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: left 0.5s, transform 0.5s, opacity 0.5s ease; }
-
-a:hover::before {
-  left: 103%;
-  transform: scale(0) rotate(360deg);
-  opacity: 0; }
-
-a::after {
-  content: "Hover me";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: yellow;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: left 0.5s, transform 0.5s, opacity 0.5s ease;
-  transform: scale(0) rotateY(0deg);
-  opacity: 0; }
-
-a:hover::after {
-  left: 0;
-  transform: scale(1) rotateY(360deg);
-  opacity: 1; }
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff0;
+  transform: translateY(-50%); }
